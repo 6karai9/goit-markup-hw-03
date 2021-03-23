@@ -120,6 +120,14 @@ address {
   color: var(--title-color);
 }
 
+.active-studio {
+  color: var(--link-color);
+}
+
+.active-portfolio {
+  color: var(--link-color);
+}
+
 .main-title {
   display: block;
   margin-bottom: 0px;
