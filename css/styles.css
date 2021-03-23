@@ -39,10 +39,8 @@ p {
   margin-top: 0;
 }
 
-ul,
-li {
-  padding: 0px;
-  margin: 0px;
+ul {
+  padding-inline-start: 0;
 }
 
 p {
@@ -153,11 +151,12 @@ address {
 
 .features-title {
   font-weight: 700;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -191,8 +190,6 @@ address {
 .navigation {
   display: flex;
   align-items: baseline;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .logo-link {
@@ -210,6 +207,8 @@ address {
 }
 
 .nav-link {
+  padding-top: 24px;
+  padding-bottom: 25px;
   display: flex;
   margin-bottom: 0px;
 }
@@ -246,7 +245,6 @@ header {
 }
 
 .hero-section {
-  min-height: 100vh;
   text-align: center;
 }
 
@@ -254,7 +252,7 @@ header {
   background-color: var(--bg-color);
 }
 
-.features-content {
+.features-section {
   padding-top: 94px;
 }
 
@@ -262,18 +260,13 @@ header {
   --grid-item: 4;
 }
 
-.doing-content {
+.doing-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .about-item {
   --grid-item: 3;
-}
-
-.team-content {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-list {
@@ -284,13 +277,14 @@ header {
   --grid-item: 4;
 }
 
-.item-content {
-  padding: 30px 59px;
+.team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--bg-button-color);
 }
 
-.footer-block {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.item-block {
+  padding: 30px 59px;
 }
 
 .footer-link {
@@ -307,27 +301,24 @@ header {
   display: block;
 }
 
-.item-contact {
+.item-contact:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
 
-.buttons-portfolio-block {
+.portfolio-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .buttons-item:not(:last-child) {
   margin-right: 9px;
-}
-
-.examples-block {
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .examples-item {
@@ -365,9 +356,7 @@ header {
 }
 
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-color);
-}
-
-.team-section-bgcolor {
-  background-color: var(--bg-button-color);
 }
