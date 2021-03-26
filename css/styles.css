@@ -152,6 +152,7 @@ address {
 }
 
 .features-title {
+  text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
@@ -178,6 +179,12 @@ address {
   color: var(--title-color);
 }
 
+.element-style {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+}
+
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -189,6 +196,7 @@ address {
   border-radius: 5px;
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 
 .navigation {
@@ -211,8 +219,8 @@ address {
 }
 
 .nav-link {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   margin-bottom: 0px;
 }
